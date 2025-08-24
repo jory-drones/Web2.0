@@ -17,7 +17,7 @@ export default function Hive() {
               <p className="uppercase text-xs tracking-wide text-text-muted">Key Specifications</p>
               <ul className="list-disc pl-5 mt-2 space-y-1 text-sm">
                 <li>Weight: 35 kg / 77 lb</li>
-                <li>Dimensions: 31 x 34 x 35 in</li>
+                <li>Dimensions: 31 × 34 × 35 in</li>
                 <li>Power Supply: 110V or 220V AC</li>
               </ul>
             </div>
@@ -32,13 +32,14 @@ export default function Hive() {
           </div>
         </div>
 
-        <div className="md:col-span-6">
+        <div className="md:col-span-6 flex justify-center">
           <Image
             src="/assets/hive.png"
             alt="The Hive"
-            width={1600}
-            height={900}
-            className="w-full max-w-[880px] h-auto"
+            width={2000}
+            height={1125}
+            className="w-full max-w-[1100px] h-auto md:-mr-6"
+            priority={false}
           />
         </div>
       </div>
