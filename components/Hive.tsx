@@ -1,3 +1,6 @@
+import Image from "next/image";
+import hiveImg from "@/public/assets/hive2.png"; // forces inclusion
+
 export default function Hive() {
   return (
     <section className="py-20 px-6 md:px-16 flex flex-col md:flex-row items-center justify-between gap-12">
@@ -30,13 +33,11 @@ export default function Hive() {
 
       {/* IMAGE (right) */}
       <div className="w-full md:w-1/2 flex justify-center">
-        {/* IMPORTANT: file must be at public/assets/hive2.png */}
-        <img
-          src="/assets/hive2.png"
+        <Image
+          src={hiveImg}
           alt="The Hive"
-          loading="lazy"
-          decoding="async"
           className="max-h-[350px] w-auto h-auto object-contain"
+          priority={false}
         />
       </div>
     </section>
