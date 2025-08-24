@@ -8,7 +8,7 @@ export default function Footer() {
 
           <div className="mt-6 text-sm text-text-muted">Powered By:</div>
           <div className="mt-2 flex items-center gap-3 opacity-80">
-            <img src="/assets/sunflower.png" alt="Sunflower Labs" className="h-8 w-auto" />
+            <img src="/assets/sunflower.png.png" alt="Sunflower Labs" className="h-8 w-auto" />
             <span className="sr-only">Sunflower Labs</span>
           </div>
         </div>
