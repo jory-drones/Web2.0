@@ -2,45 +2,55 @@ import Image from "next/image";
 
 export default function Bee() {
   return (
-    <section className="section">
-      <div className="container grid md:grid-cols-12 gap-12 items-center">
-        <div className="md:col-span-6 order-2 md:order-1">
-          <Image src="/assets/drone-alt.png" alt="The Bee" width={1400} height={800} className="w-full h-auto" />
-        </div>
-        <div className="md:col-span-6 order-1 md:order-2">
-          <h3 className="text-2xl md:text-3xl font-semibold font-[var(--font-orbitron)]">The Bee</h3>
-          <p className="mt-4 text-text-muted">
-            Lightweight. Autonomous. Reliable. Designed for safety and performance, The Bee combines advanced autonomous flight
-            technology with high-quality video capture and precision landing.
-          </p>
-          <div className="mt-6 grid md:grid-cols-2 gap-6">
-            <div>
-              <p className="uppercase text-xs tracking-wide text-text-muted">Key Specifications</p>
-              <ul className="list-disc pl-5 mt-2 space-y-1 text-sm">
-                <li>Weight: 3.1 kg, battery included</li>
-                <li>Size: 31 x 31 x 8 in</li>
-                <li>Cruise Speed: 10 mph</li>
-                <li>Flight Time: 15 minutes (+ safety reserve)</li>
-                <li>Battery: 4000mAh (1:1.5 flight-to-recharge ratio)</li>
-              </ul>
-            </div>
-            <div>
-              <p className="uppercase text-xs tracking-wide text-text-muted">Performance</p>
-              <ul className="list-disc pl-5 mt-2 space-y-1 text-sm">
-                <li>Wind Resistance: 20 mph; Gusts: 30 mph</li>
-                <li>Hover Accuracy: Within 1 foot</li>
-                <li>Operating Temps: -10°C to +40°C (14°F to 104°F)</li>
-              </ul>
-              <p className="uppercase text-xs tracking-wide text-text-muted mt-4">Technology</p>
-              <ul className="list-disc pl-5 mt-2 space-y-1 text-sm">
-                <li>GPS: Multi-band RTK</li>
-                <li>Camera: Sony IMX385 low-light sensor</li>
-                <li>Resolution: 1080p HD @ 25 fps</li>
-                <li>FOV: 100° horizontal, 50° vertical</li>
-                <li>Video latency: ~250 ms</li>
-                <li>Transmission Range: 2,000 ft; Obstacle Detection: 20 ft</li>
-              </ul>
-            </div>
+    <section className="py-20 px-6 md:px-16 flex flex-col md:flex-row items-center justify-between gap-12">
+      {/* Image */}
+      <div className="flex-shrink-0 w-full md:w-1/2 flex justify-center">
+        <img
+          src="/assets/drone-alt.png"
+          alt="The Bee"
+          className="max-h-[350px] w-auto object-contain"
+        />
+      </div>
+
+      {/* Text */}
+      <div className="w-full md:w-1/2 text-center md:text-left">
+        <h2 className="text-3xl font-orbitron mb-4">The Bee</h2>
+        <p className="text-gray-300 mb-4">
+          Lightweight. Autonomous. Reliable. Designed for safety and performance, 
+          The Bee combines advanced autonomous flight technology with high-quality 
+          video capture and precision landing.
+        </p>
+
+        <div className="grid grid-cols-2 gap-6 text-gray-400 text-sm leading-relaxed">
+          <div>
+            <p className="font-semibold uppercase">Key Specifications</p>
+            <ul className="list-disc pl-5">
+              <li>Weight: 3.1 kg, battery included</li>
+              <li>Size: 31 × 31 × 8 in</li>
+              <li>Cruise Speed: 10 mph</li>
+              <li>Flight Time: 15 min (+ safety reserve)</li>
+              <li>Battery: 4000mAh (1:1.5 flight-to-recharge ratio)</li>
+            </ul>
+          </div>
+
+          <div>
+            <p className="font-semibold uppercase">Performance</p>
+            <ul className="list-disc pl-5">
+              <li>Wind Resistance: 20 mph (gusts: 30 mph)</li>
+              <li>Hover Accuracy: within 1 foot</li>
+              <li>Operating Temp: -10°C to +40°C (14°F to 104°F)</li>
+            </ul>
+
+            <p className="font-semibold uppercase mt-4">Technology</p>
+            <ul className="list-disc pl-5">
+              <li>GPS: Multi-band RTK</li>
+              <li>Camera: Sony IMX385 low-light sensor</li>
+              <li>Resolution: 1080p HD @ 25 fps</li>
+              <li>FOV: 100° horizontal, 50° vertical</li>
+              <li>Video latency: ~250 ms</li>
+              <li>Transmission Range: 2,000 ft</li>
+              <li>Obstacle Detection: 20 ft</li>
+            </ul>
           </div>
         </div>
       </div>
