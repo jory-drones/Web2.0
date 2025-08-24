@@ -5,6 +5,9 @@
 :root { color-scheme: dark; }
 html, body { height: 100%; background: #0B1120; }
 
+/* Orbitron for display/headers */
+.font-display, h1, h2, h3 { font-family: var(--font-orbitron), system-ui, sans-serif; letter-spacing:.01em; }
+
 .section { @apply relative py-24 md:py-28; }
 .h2 { @apply text-3xl md:text-4xl font-semibold tracking-tight; }
 .muted { @apply text-text-muted; }
