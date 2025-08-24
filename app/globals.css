@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; }
+html, body { height: 100%; background: #0B1120; }
+
+.section { @apply relative py-24 md:py-28; }
+.h2 { @apply text-3xl md:text-4xl font-semibold tracking-tight; }
+.muted { @apply text-text-muted; }
+.card { @apply rounded-2xl bg-panel shadow-soft border border-border; }
