@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <header className="relative min-h-[88vh] flex items-center" style={{ paddingTop: "84px" }} id="top">
-      {/* Background image (NOTE: .jpeg) */}
+      {/* Background image (.jpeg) */}
       <Image
         src="/assets/hero-bg.jpeg"
         alt=""
@@ -33,4 +33,15 @@ export default function Hero() {
             className="w-full h-auto md:-mr-20"
             priority
           />
-        </di
+        </div>
+      </div>
+
+      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 text-center">
+        <a href="#services" className="flex flex-col items-center gap-2 text-sm font-medium">
+          See How It Works
+          <img src="/assets/chevron.png" alt="" className="h-5 w-5 opacity-80" />
+        </a>
+      </div>
+    </header>
+  );
+}
