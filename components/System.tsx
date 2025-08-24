@@ -1,3 +1,4 @@
+import Image from "next/image";
 export default function System() {
   return (
     <section className="py-20 px-6 md:px-16 flex flex-col md:flex-row items-center justify-between gap-12">
